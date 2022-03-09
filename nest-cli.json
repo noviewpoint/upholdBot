@@ -1,0 +1,21 @@
+{
+  "collection": "@nestjs/schematics",
+  "sourceRoot": "apps/bot/src",
+  "monorepo": true,
+  "root": "apps/bot",
+  "compilerOptions": {
+    "webpack": true,
+    "tsConfigPath": "apps/bot/tsconfig.app.json"
+  },
+  "projects": {
+    "bot": {
+      "type": "application",
+      "root": "apps/bot",
+      "entryFile": "main",
+      "sourceRoot": "apps/bot/src",
+      "compilerOptions": {
+        "tsConfigPath": "apps/bot/tsconfig.app.json"
+      }
+    }
+  }
+}
